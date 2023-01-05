@@ -98,24 +98,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.243333,
-                    35.625
-                ]
-            },
-            "properties": {
-                "displayName": "高尾山",
-                "type": "top",
-                "altitude": "599.3m",
-                "id": "_qwn_0SKLKU",
-                "anchor": "left",
-                "start": 342
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     137.480278,
                     35.892778
                 ]
@@ -143,7 +125,7 @@
                 "type": "top",
                 "altitude": "2141m",
                 "id": "4BcrnsUno6A",
-                "anchor": "top-right",
+                "anchor": "bottom-left",
                 "start": 610
             }
         },
@@ -179,7 +161,7 @@
                 "type": "top",
                 "altitude": "2444.3m",
                 "id": "B0s4VRYbufs",
-                "anchor": "bottom-left",
+                "anchor": "bottom-right",
                 "start": 400
             }
         },
@@ -198,7 +180,25 @@
                 "altitude": "2899.17m",
                 "id": "vJ4QxN6GBc0",
                 "anchor": "left",
-                "start": 705
+                "start": 705,
+                "show": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.140536,
+                    36.2313825
+                ]
+            },
+            "properties": {
+                "displayName": "美ヶ原",
+                "type": "top",
+                "id": "-Au-Dim6trw",
+                "anchor": "bottom-left",
+                "start": 500
             }
         },
         {
@@ -216,8 +216,97 @@
                 "altitude": "1406m",
                 "id": "sNU00nMqjlI",
                 "anchor": "top-left",
-                "start": 290,
-                "show": true
+                "start": 290
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.583333,
+                    35.446667
+                ]
+            },
+            "properties": {
+                "displayName": "竜ヶ岳",
+                "type": "top",
+                "altitude": "1485m",
+                "id": "6zcpaMK9kds",
+                "anchor": "right",
+                "start": 327
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.901111,
+                    35.450278
+                ]
+            },
+            "properties": {
+                "displayName": "石割山",
+                "type": "top",
+                "altitude": "1413m",
+                "id": "Ny692H_Rt0k",
+                "anchor": "bottom-left",
+                "start": 300
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.808889,
+                    35.549167
+                ]
+            },
+            "properties": {
+                "displayName": "三ッ峠",
+                "type": "top",
+                "altitude": "1785m",
+                "id": "Nky0_05TH1U",
+                "anchor": "top-left",
+                "start": 400
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.243333,
+                    35.625
+                ]
+            },
+            "properties": {
+                "displayName": "高尾山",
+                "type": "top",
+                "altitude": "599.3m",
+                "id": "_qwn_0SKLKU",
+                "anchor": "left",
+                "start": 342
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.406111,
+                    35.417778
+                ]
+            },
+            "properties": {
+                "displayName": "伊吹山",
+                "type": "top",
+                "altitude": "1377.31m",
+                "id": "SRhQ5_0UjTQ",
+                "anchor": "bottom-right",
+                "start": 305
             }
         },
         {
@@ -261,60 +350,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    136.406111,
-                    35.417778
-                ]
-            },
-            "properties": {
-                "displayName": "伊吹山",
-                "type": "top",
-                "altitude": "1377.31m",
-                "id": "SRhQ5_0UjTQ",
-                "anchor": "top-right",
-                "start": 305
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.583333,
-                    35.446667
-                ]
-            },
-            "properties": {
-                "displayName": "竜ヶ岳",
-                "type": "top",
-                "altitude": "1485m",
-                "id": "6zcpaMK9kds",
-                "anchor": "right",
-                "start": 327
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.808889,
-                    35.549167
-                ]
-            },
-            "properties": {
-                "displayName": "三ッ峠",
-                "type": "top",
-                "altitude": "1785m",
-                "id": "Nky0_05TH1U",
-                "anchor": "top-left",
-                "start": 400
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     131.103889,
                     32.884167
                 ]
@@ -324,8 +359,9 @@
                 "type": "top",
                 "altitude": "1592.3m",
                 "id": "0_B7pi2g5Tc",
-                "anchor": "right",
-                "start": 400
+                "anchor": "top-left",
+                "start": 400,
+                "show": true
             }
         },
         {
@@ -344,21 +380,6 @@
                 "id": "uTjv0DDg8Hs",
                 "anchor": "left",
                 "start": 122
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.901111,
-                    35.450278
-                ]
-            },
-            "properties": {
-                "displayName": "石割山",
-                "type": "top",
-                "altitude": "1413m"
             }
         },
         {
@@ -392,40 +413,9 @@
                 "displayName": "嘉津宇岳",
                 "type": "top",
                 "id": "KDiyfj0-jXc",
-                "anchor": "bottom-right",
+                "anchor": "top-left",
                 "start": 259,
                 "show": true
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.140536,
-                    36.2313825
-                ]
-            },
-            "properties": {
-                "displayName": "美ヶ原",
-                "type": "top",
-                "id": "-Au-Dim6trw",
-                "anchor": "bottom-left",
-                "start": 500
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.903077,
-                    35.440395
-                ]
-            },
-            "properties": {
-                "DisplaydisplayName": "石割山",
-                "type": "top"
             }
         }
     ]

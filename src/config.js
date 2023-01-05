@@ -1,3 +1,4 @@
+const THRESHOLD = 500;
 const config = {
     accessToken: "PLEASE_SET_YOUR_TOKEN",
     animation: {
@@ -10,14 +11,14 @@ const config = {
     },
     video: {
         controls: 1,
-        width: 160,
-        height: 90,
+        width: screen.width < THRESHOLD ? 160 : 300,
+        height: screen.width < THRESHOLD ? 90 : 168.75,
     },
     flyToPoints: [
         {
-            center: [139.672, 36.2], //Kanto
+            center: [137.672, 36.2], //Kanto
             speed: 1,
-            zoomLevel: 3,
+            zoomLevel: screen.width < THRESHOLD ? 3.5 : 4.5,
             pitch: 0,
             bearing: 0,
         },
@@ -82,6 +83,7 @@ const config = {
         mapStyle: "mapbox://styles/mapbox/satellite-streets-v12",
         terrainExaggeration: 1.5,
         featureTextSize: 10,
+        showControl: screen.width < THRESHOLD ? false : true,
     },
 };
 export { config };

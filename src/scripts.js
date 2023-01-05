@@ -7,13 +7,6 @@ const featureLayer = {
 };
 
 const add3D = (map) => {
-    // Add some fog in the background
-    map.setFog({
-        range: [0, 2],
-        color: "white",
-        "horizon-blend": 0.2,
-    });
-
     // Add a sky layer over the horizon
     map.addLayer({
         id: "sky",
@@ -146,6 +139,9 @@ async function main() {
         hash: false,
         fadeDuration: 0,
     });
+    if (config.style.showControl) {
+        map.addControl(new mapboxgl.NavigationControl());
+    }
     window.map = map;
     await map.once("load");
 
