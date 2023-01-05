@@ -11,12 +11,13 @@
                 ]
             },
             "properties": {
-                "name": "旭岳",
+                "displayName": "旭岳",
                 "type": "top",
                 "altitude": "2290.89m",
                 "id": "Dds7RvKaxDo",
                 "anchor": "left",
-                "start": 120
+                "start": 120,
+                "show": true
             }
         },
         {
@@ -29,7 +30,7 @@
                 ]
             },
             "properties": {
-                "name": "十勝岳",
+                "displayName": "十勝岳",
                 "type": "top",
                 "altitude": "2077m",
                 "id": "YrNDAPOpPfg",
@@ -47,7 +48,7 @@
                 ]
             },
             "properties": {
-                "name": "八幡平&岩手山",
+                "displayName": "八幡平&岩手山",
                 "type": "top",
                 "altitude": "1613.3m",
                 "id": "vzHIXB2uygo",
@@ -60,47 +61,18 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    141.000833,
-                    39.852222
-                ]
-            },
-            "properties": {
-                "name": "岩手山",
-                "type": "top",
-                "altitude": "2038.2m"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     140.439722,
                     38.143333
                 ]
             },
             "properties": {
-                "name": "蔵王山",
+                "displayName": "蔵王山",
                 "type": "top",
                 "altitude": "1841m",
                 "id": "WgLlEoqO0i4",
                 "anchor": "bottom-right",
-                "start": 222
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.629167,
-                    36.315833
-                ]
-            },
-            "properties": {
-                "DisplayName": "三毳山",
-                "type": "top",
-                "altitude": "229m"
+                "start": 222,
+                "show": true
             }
         },
         {
@@ -113,7 +85,7 @@
                 ]
             },
             "properties": {
-                "name": "高妻山",
+                "displayName": "高妻山",
                 "type": "top",
                 "altitude": "2353m",
                 "id": "Lyz9cRZiDDE",
@@ -131,7 +103,7 @@
                 ]
             },
             "properties": {
-                "name": "高尾山",
+                "displayName": "高尾山",
                 "type": "top",
                 "altitude": "599.3m",
                 "id": "_qwn_0SKLKU",
@@ -149,7 +121,7 @@
                 ]
             },
             "properties": {
-                "name": "御嶽山",
+                "displayName": "御嶽山",
                 "type": "top",
                 "altitude": "3067m",
                 "id": "Otq8_vmdGB0",
@@ -167,7 +139,7 @@
                 ]
             },
             "properties": {
-                "name": "平ヶ岳",
+                "displayName": "平ヶ岳",
                 "type": "top",
                 "altitude": "2141m",
                 "id": "4BcrnsUno6A",
@@ -185,7 +157,7 @@
                 ]
             },
             "properties": {
-                "name": "木曽駒ヶ岳",
+                "displayName": "木曽駒ヶ岳",
                 "type": "top",
                 "altitude": "2956m",
                 "id": "Q_zMMupvET8",
@@ -203,7 +175,7 @@
                 ]
             },
             "properties": {
-                "name": "焼岳",
+                "displayName": "焼岳",
                 "type": "top",
                 "altitude": "2444.3m",
                 "id": "B0s4VRYbufs",
@@ -221,7 +193,7 @@
                 ]
             },
             "properties": {
-                "name": "八ヶ岳(赤岳)",
+                "displayName": "八ヶ岳(赤岳)",
                 "type": "top",
                 "altitude": "2899.17m",
                 "id": "vJ4QxN6GBc0",
@@ -239,12 +211,13 @@
                 ]
             },
             "properties": {
-                "name": "天城山",
+                "displayName": "天城山",
                 "type": "top",
                 "altitude": "1406m",
                 "id": "sNU00nMqjlI",
-                "anchor": "left",
-                "start": 290
+                "anchor": "top-left",
+                "start": 290,
+                "show": true
             }
         },
         {
@@ -257,7 +230,7 @@
                 ]
             },
             "properties": {
-                "name": "大台ヶ原",
+                "displayName": "大台ヶ原",
                 "type": "top",
                 "altitude": "1695m",
                 "id": "kA-glkg3r5I",
@@ -275,7 +248,7 @@
                 ]
             },
             "properties": {
-                "name": "八経ヶ岳",
+                "displayName": "八経ヶ岳",
                 "type": "top",
                 "altitude": "1915m",
                 "id": "5klCsACeLX0",
@@ -293,7 +266,7 @@
                 ]
             },
             "properties": {
-                "name": "伊吹山",
+                "displayName": "伊吹山",
                 "type": "top",
                 "altitude": "1377.31m",
                 "id": "SRhQ5_0UjTQ",
@@ -311,7 +284,7 @@
                 ]
             },
             "properties": {
-                "name": "竜ヶ岳",
+                "displayName": "竜ヶ岳",
                 "type": "top",
                 "altitude": "1485m",
                 "id": "6zcpaMK9kds",
@@ -329,7 +302,7 @@
                 ]
             },
             "properties": {
-                "name": "三ッ峠",
+                "displayName": "三ッ峠",
                 "type": "top",
                 "altitude": "1785m",
                 "id": "Nky0_05TH1U",
@@ -347,7 +320,7 @@
                 ]
             },
             "properties": {
-                "name": "阿蘇山",
+                "displayName": "阿蘇山",
                 "type": "top",
                 "altitude": "1592.3m",
                 "id": "0_B7pi2g5Tc",
@@ -365,7 +338,7 @@
                 ]
             },
             "properties": {
-                "name": "くじゅう連山",
+                "displayName": "くじゅう連山",
                 "type": "top",
                 "altitude": "1786.5m",
                 "id": "uTjv0DDg8Hs",
@@ -383,7 +356,7 @@
                 ]
             },
             "properties": {
-                "name": "石割山",
+                "displayName": "石割山",
                 "type": "top",
                 "altitude": "1413m"
             }
@@ -398,7 +371,7 @@
                 ]
             },
             "properties": {
-                "name": "開聞岳",
+                "displayName": "開聞岳",
                 "type": "top",
                 "altitude": "924m",
                 "id": "w7gWbeNCKUA",
@@ -416,11 +389,12 @@
                 ]
             },
             "properties": {
-                "name": "嘉津宇岳",
+                "displayName": "嘉津宇岳",
                 "type": "top",
                 "id": "KDiyfj0-jXc",
-                "anchor": "bottom",
-                "start": 259
+                "anchor": "bottom-right",
+                "start": 259,
+                "show": true
             }
         },
         {
@@ -433,7 +407,7 @@
                 ]
             },
             "properties": {
-                "name": "美ヶ原",
+                "displayName": "美ヶ原",
                 "type": "top",
                 "id": "-Au-Dim6trw",
                 "anchor": "bottom-left",
@@ -450,21 +424,7 @@
                 ]
             },
             "properties": {
-                "DisplayName": "石割山",
-                "type": "top"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.727363,
-                    35.360626
-                ]
-            },
-            "properties": {
-                "DisplayName": "富士山",
+                "DisplaydisplayName": "石割山",
                 "type": "top"
             }
         }

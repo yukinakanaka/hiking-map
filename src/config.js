@@ -10,10 +10,17 @@ const config = {
     },
     video: {
         controls: 1,
-        width: 384,
-        height: 216,
+        width: 160,
+        height: 90,
     },
     flyToPoints: [
+        {
+            center: [139.672, 36.2], //Kanto
+            speed: 1,
+            zoomLevel: 3,
+            pitch: 0,
+            bearing: 0,
+        },
         {
             center: [142.739, 43.167], //Hokkaido
             speed: 1,
@@ -74,7 +81,7 @@ const config = {
     style: {
         mapStyle: "mapbox://styles/mapbox/satellite-streets-v12",
         terrainExaggeration: 1.5,
-        featureTextSize: 15,
+        featureTextSize: 10,
     },
 };
 export { config };

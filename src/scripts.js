@@ -54,7 +54,7 @@ const addFeatures = (map, featuresGeojson) => {
             "text-font": ["DIN Pro Bold", "Arial Unicode MS Regular"],
             "text-anchor": "top",
             "text-size": config.style.featureTextSize,
-            "text-field": ["get", "DisplayName"],
+            "text-field": ["get", "displayName"],
             "text-offset": [0, 1],
             "text-variable-anchor": ["top", "bottom"],
         },
@@ -65,18 +65,46 @@ const addFeatures = (map, featuresGeojson) => {
             "text-color": "hsl(0, 0%, 100%)",
         },
     });
+
+    map.on("click", featureLayer.layerId, (e) => {
+        const feature = e.features[0];
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - feature.geometry.coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup({ closeOnClick: false, anchor: feature.properties.anchor })
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML(
+                `<iframe type="text/html" width="${config.video.width}" height="${config.video.height}" src="https://www.youtube.com/embed/${feature.properties.id}?autoplay=1&mute=1&controls=${config.video.controls}&rel=0&start=${feature.properties.start}" frameborder="0"></iframe>
+            <div class="mountain-name">${feature.properties.displayName}</div>`
+            )
+            .addTo(map)
+            .setMaxWidth("400px");
+    });
+    map.on("mouseenter", featureLayer.layerId, () => {
+        map.getCanvas().style.cursor = "pointer";
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on("mouseleave", featureLayer.layerId, () => {
+        map.getCanvas().style.cursor = "";
+    });
 };
 
-const addVideos = (map, featuresGeojson) => {
+const addDefaultVideos = (map, featuresGeojson) => {
     for (let index = 0; index < featuresGeojson.features.length; index++) {
         const feature = featuresGeojson.features[index];
 
-        if (feature.properties.id) {
+        if (feature.properties.show) {
             new mapboxgl.Popup({ closeOnClick: false, anchor: feature.properties.anchor })
                 .setLngLat(feature.geometry.coordinates)
                 .setHTML(
                     `<iframe type="text/html" width="${config.video.width}" height="${config.video.height}" src="https://www.youtube.com/embed/${feature.properties.id}?autoplay=1&mute=1&controls=${config.video.controls}&rel=0&start=${feature.properties.start}" frameborder="0"></iframe>
-                    <div class="mountain-name">${feature.properties.name}</div>`
+                    <div class="mountain-name">${feature.properties.displayName}</div>`
                 )
                 .addTo(map)
                 .setMaxWidth("400px");
@@ -124,7 +152,7 @@ async function main() {
     // add Layers
     add3D(map);
     addFeatures(map, featuresGeojson);
-    addVideos(map, featuresGeojson);
+    addDefaultVideos(map, featuresGeojson);
 
     if (config.animation.run) {
         await new Promise((s) => setTimeout(s, config.animation.firstSleepTime));
